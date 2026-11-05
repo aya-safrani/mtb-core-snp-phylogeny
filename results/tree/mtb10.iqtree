@@ -1,0 +1,171 @@
+IQ-TREE 3.1.3 built Jul 26 2026
+
+Input file name: results/core_snp/core_filtered.aln
+Type of analysis: tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 88085
+
+REFERENCES
+----------
+
+To cite IQ-TREE 3 please use:
+
+Thomas K.F. Wong, Nhan Ly-Trong, Huaiyan Ren, Piyumal Demotte, Hector Banos,
+Andrew J. Roger, Edward Susko, Chris Bielow, Nicola De Maio, Nick Goldman,
+Matthew W. Hahn, Mario dos Reis, Le Sy Vinh, Gavin Huttley, Robert Lanfear, Bui Quang Minh (2026)
+IQ-TREE 3: Phylogenomic Inference Software using Complex Evolutionary Models.
+Molecular Biology and Evolution, msag117.
+https://doi.org/10.1093/molbev/msag117
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+SEQUENCE ALIGNMENT
+------------------
+
+NOTE: Alignment sequence type is auto-detected. If in doubt, specify it via -st option.
+Input data: 11 sequences with 1393 nucleotide sites
+Number of constant sites: 0 (= 0% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 0 (= 0% of all sites)
+Number of parsimony informative sites: 803
+Number of distinct site patterns: 191
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: GTR+F+ASC
+
+Rate parameter R:
+
+  A-C: 0.9649
+  A-G: 3.0418
+  A-T: 0.3145
+  C-G: 0.5133
+  C-T: 3.0943
+  G-T: 1.0000
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.1722
+  pi(C) = 0.3262
+  pi(G) = 0.3379
+  pi(T) = 0.1637
+
+Rate matrix Q:
+
+  A    -1.348    0.3043    0.9937   0.04977
+  C    0.1607    -0.818    0.1677    0.4896
+  G    0.5065    0.1619   -0.8266    0.1582
+  T   0.05237    0.9757    0.3267    -1.355
+
+Model of rate heterogeneity: Uniform
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -6757.1199 (s.e. 42.4718)
+Unconstrained log-likelihood (without tree): -6474.0042
+Number of free parameters (#branches + #model parameters): 27
+Akaike information criterion (AIC) score: 13568.2399
+Corrected Akaike information criterion (AICc) score: 13569.3476
+Bayesian information criterion (BIC) score: 13709.6987
+
+Total tree length (sum of branch lengths): 0.0241
+Sum of internal branch lengths: 0.0138 (57.2320% of tree length)
+
+WARNING: 4 near-zero internal branches (<0.0007) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'ERR234101' is drawn at root
+Numbers in parentheses are  ultrafast bootstrap support (%)
+
++-----ERR234101
+|
++-----ERR234103
+|
+|                                                  +-----ERR234106
+|                    +-----------------------------| (100)
+|                    |                             |  +***ERR234148
+|                    |                             +**| (100)
+|                    |                                +----ERR234150
+|      +-------------| (100)
+|      |             |                             +**ERR234113
+|      |             +-----------------------------| (100)
+|      |                                           |  +**ERR234142
+|      |                                           +**| (88)
+|      |                                              +-----ERR234144
+|   +**| (100)
+|   |  +------------------Reference
++***| (100)
+    |              +***ERR234109
+    +--------------| (100)
+                   +------ERR234111
+
+Tree in newick format:
+
+(ERR234101:0.0009038606,ERR234103:0.0009268459,((((ERR234106:0.0009102649,(ERR234148:0.0005657827,ERR234150:0.0007718118)100:0.0005135102)100:0.0040904806,(ERR234113:0.0005329613,(ERR234142:0.0004966906,ERR234144:0.0008392232)88:0.0000322686)100:0.0041858945)100:0.0020089324,Reference:0.0026401380)100:0.0002273173,(ERR234109:0.0006325171,ERR234111:0.0010788231)100:0.0021585922)100:0.0005649711);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -6757.174055
+Robinson-Foulds distance between ML tree and consensus tree: 0
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++-----ERR234101
+|
++-----ERR234103
+|
+|                                                  +-----ERR234106
+|                    +-----------------------------| (100)
+|                    |                             |  +---ERR234148
+|                    |                             +--| (100)
+|                    |                                +----ERR234150
+|      +-------------| (100)
+|      |             |                             +--ERR234113
+|      |             +-----------------------------| (100)
+|      |                                           |  +--ERR234142
+|      |                                           +--| (88)
+|      |                                              +-----ERR234144
+|   +--| (100)
+|   |  +------------------Reference
++---| (100)
+    |              +---ERR234109
+    +--------------| (100)
+                   +------ERR234111
+
+
+Consensus tree in newick format: 
+
+(ERR234101:0.0009230091,ERR234103:0.0009464417,((((ERR234106:0.0009285019,(ERR234148:0.0005767277,ERR234150:0.0007869170)100:0.0005236702)100:0.0041763328,(ERR234113:0.0005452712,(ERR234142:0.0005083056,ERR234144:0.0008588436)88:0.0000335504)100:0.0042795487)100:0.0020519213,Reference:0.0026965595)100:0.0002312313,(ERR234109:0.0006459138,ERR234111:0.0011016999)100:0.0022045091)100:0.0005769472);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t results/tree/mtb10.treefile -m "GTR{0.964892,3.04182,0.314507,0.51334,3.09428}+F{0.172225,0.326176,0.337923,0.163676}+ASC" --length 1393
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s results/core_snp/core_filtered.aln --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s results/core_snp/core_filtered.aln --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Fri Sep 25 09:03:12 2026
+Total CPU time used: 71.930257 seconds (0h:1m:11s)
+Total wall-clock time used: 83.25405097 seconds (0h:1m:23s)
+
